@@ -34,31 +34,35 @@ namespace Lab7
 
             if (userInput.ToLower() == "name")
             {
+                Console.WriteLine("Be sure to capitalize the first letter.");
                 Console.Write("Enter your first name: ");
                 userName = Console.ReadLine();
                 response = ValidateName(userName);
             }
             else if (userInput.ToLower() == "email")
             {
+                Console.WriteLine("eg. JohnDoe@email.com");
                 Console.Write("Enter your Email: ");
                 email = Console.ReadLine();
                 response = ValidateEmail(email);
             }
             else if (userInput.ToLower() == "phone number")
             {
+                Console.WriteLine("eg. 555-555-5555");
                 Console.Write("Enter your Phone Number: ");
                 phoneNum = Console.ReadLine();
                 response = ValidatePhoneNumber(phoneNum);
             }
             else if (userInput.ToLower() == "date")
             {
+                Console.WriteLine("dd/mm/yyyy");
                 Console.Write("Enter today's date: ");
                 date = Console.ReadLine();
                 response = ValidateDate(date);
             }
             else if (userInput.ToLower() == "html")
             {
-                Console.Write("Enter some HTML elements: ");
+                Console.Write("Enter some HTML open and close elements: ");
                 html = Console.ReadLine();
                 response = ValidateHtml(html);
             }
